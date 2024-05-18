@@ -1,0 +1,6 @@
+@AcademiaFenix.API_HostAddress = http://localhost:5096
+
+GET {{AcademiaFenix.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
