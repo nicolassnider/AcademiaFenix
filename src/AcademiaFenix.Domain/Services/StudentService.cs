@@ -1,15 +1,31 @@
-﻿using AcademiaFenix.Domain.Entities;
+﻿using AcademiaFenix.Domain.Constants;
+using AcademiaFenix.Domain.Entities;
 using AcademiaFenix.Domain.Exceptions;
 
 namespace AcademiaFenix.Domain.Services
 {
-	public class StudentService : IStudentService
+    public class StudentService : IStudentService
     {
-        public Student CreateStudent(string name, string belt)
+        public Student CreateStudent(
+            string name,
+            DateTime dateOfBirth,
+            TaekwondoBeltColorsEnum beltColor,
+            string email,
+            DateTime? lastMedicExamDate = null,
+            DateTime? trainingStartDate = null
+        )
         {
-            if (name == null || belt == null) throw new StudentNameMissingException(name);
+            if (name == null)
+                throw new StudentNameMissingException(name);
 
-            return new Student(name, belt);
+            return new Student(
+                name,
+                email,
+                dateOfBirth,
+                beltColor,
+                lastMedicExamDate,
+                trainingStartDate
+            );
         }
     }
 }

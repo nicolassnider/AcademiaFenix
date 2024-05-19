@@ -1,6 +1,6 @@
 ﻿namespace AcademiaFenix.Domain.Constants
 {
-	public enum TaekwondoBeltColors
+	public enum TaekwondoBeltColorsEnum
     {
         White,
         WhiteWithYellowStripe,
