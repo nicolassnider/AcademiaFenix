@@ -1,4 +1,5 @@
 ﻿using AcademiaFenix.Application.Dtos;
+using AcademiaFenix.Domain.Entities;
 
 namespace AcademiaFenix.Application.Core
 {
