@@ -46,7 +46,7 @@ namespace AcademiaFenix.API.Extensions
             services.AddMediatR(typeof(List.Handler).Assembly);
 
             // Add controllers
-            services.AddControllers();
+            services.AddControllers();			
 
             return services;
 
