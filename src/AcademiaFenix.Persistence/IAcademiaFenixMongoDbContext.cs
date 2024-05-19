@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AcademiaFenix.Domain.Entities;
+using MongoDB.Driver;
 
 namespace AcademiaFenix.Persistence
 {
-    public interface IAcademiaFenixMongoDbContext
+	public interface IAcademiaFenixMongoDbContext
     {
-
+        IMongoCollection<Student> Students { get; }        
     }
 }

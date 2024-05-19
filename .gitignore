@@ -1,8 +1,4 @@
-.vs/*
-src/AcademiaFenix.API/obj/*
-src/AcademiaFenix.Application/bin/*
-src/AcademiaFenix.Application/obj/*
-src/AcademiaFenix.Domain/obj/*
-src/AcademiaFenix.Infrastructure/obj/*
-src/AcademiaFenix.Persistence/obj/*
-test/AcademiaFenix.UnitTest/obj/*
+.vs/
+.vscode/
+obj/
+bin/

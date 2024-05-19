@@ -7,15 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="MediatR" Version="11.1.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.5" />
     <PackageReference Include="Microsoft.OpenApi" Version="1.6.14" />
+    <PackageReference Include="MongoDB.Driver" Version="2.25.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\AcademiaFenix.Application\AcademiaFenix.Application.csproj" />
+    <ProjectReference Include="..\AcademiaFenix.Domain\AcademiaFenix.Domain.csproj" />
+    <ProjectReference Include="..\AcademiaFenix.Infrastructure\AcademiaFenix.Infrastructure.csproj" />
+    <ProjectReference Include="..\AcademiaFenix.Persistence\AcademiaFenix.Persistence.csproj" />
   </ItemGroup>
 
 </Project>
