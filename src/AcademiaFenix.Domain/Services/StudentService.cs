@@ -18,6 +18,9 @@ namespace AcademiaFenix.Domain.Services
             if (name == null)
                 throw new StudentNameMissingException(name);
 
+            if (dateOfBirth > DateTime.Now.AddYears(-5))
+                throw new StudentLessThanFiveYearsOldException();
+
             return new Student(
                 name,
                 email,

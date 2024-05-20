@@ -1,10 +1,9 @@
-﻿using System;
-using AcademiaFenix.Domain.Constants;
+﻿using AcademiaFenix.Domain.Constants;
 using AcademiaFenix.Domain.Entities;
 
 namespace AcademiaFenix.Application.Dtos
 {
-    public class StudentDto
+	public class StudentDto
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
