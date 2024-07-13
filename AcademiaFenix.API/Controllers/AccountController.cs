@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace AcademiaFenix.API.Controllers
 {
 
-    public class AccountController:BaseApiController
+    public class AccountController: ControllerBase
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly TokenService _tokenService;

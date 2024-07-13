@@ -17,6 +17,11 @@ namespace AcademiaFenix.Domain
         public DateOnly? DateOfLastBeltExam { get; set; }
         public DateOnly? DateOfLastMedicExam { get; set; }
         public DanLevel? DanLevel { get; set; }
+        public string? CreatedBy { get; set; }
+        public string? UpdatedBy { get; set; }
+        public DateOnly CreatedDate { get; set; } = DateOnly.FromDateTime(DateTime.Now);
+        public DateOnly UpdatedDate { get; set; } = DateOnly.FromDateTime(DateTime.Now);
+
         
     }
 }

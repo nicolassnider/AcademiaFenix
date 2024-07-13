@@ -1,0 +1,2 @@
+dotnet ef migrations add MigrationName --project AcademiaFenix.Persistence --startup-project AcademiaFenix.API
+dotnet ef database update --project AcademiaFenix.Persistence --startup-project AcademiaFenix.API

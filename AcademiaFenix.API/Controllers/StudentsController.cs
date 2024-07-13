@@ -15,5 +15,11 @@ namespace AcademiaFenix.API.Controllers
             return HandlePagedResult(await Mediator.Send(new List.Query{Params = param}));
         }
 
+        [HttpPost]
+        public async Task<ActionResult<Student>> CreateStudent(Student student)
+        {
+            return HandleResult(await Mediator.Send(new Create.Command{Student = student}));
+        }
+
     }
 }
