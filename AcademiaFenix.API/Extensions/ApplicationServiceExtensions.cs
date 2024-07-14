@@ -5,7 +5,6 @@ using AcademiaFenix.Infrastructure.Security;
 using AcademiaFenix.Persistence;
 using FluentValidation;
 using FluentValidation.AspNetCore;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 
 namespace AcademiaFenix.API.Extensions

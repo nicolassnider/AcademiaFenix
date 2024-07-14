@@ -39,8 +39,14 @@ namespace AcademiaFenix.Application.Students
                 .When(s => s.ColorBelt == ColorBelt.BLACK) //Only validate if ColorBelt is BLACK
                 .WithMessage("DanLevel is required for black belt students. Please choose a valid Dan level.");
 
+            RuleFor(s => s.DanLevel)
+                .Must(danLevel => danLevel==null)
+                .When(s => s.ColorBelt != ColorBelt.BLACK) //Only validate if ColorBelt is BLACK
+                .WithMessage("DanLevel is not required for white belt students.");
+
             RuleFor(s => s.Gender)
-                .NotEmpty() // Updated range to include 'O'
+                .NotEmpty()
+                .Must(gender => gender == 'M' || gender == 'F' || gender == 'O') // Updated range to include 'O'
                 .WithMessage("Gender must be either 'M', 'F', or 'O'.");
 
             // IsActive - No validation needed for bool

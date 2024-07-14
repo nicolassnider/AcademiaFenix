@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademiaFenix.API", "AcademiaFenix.API\AcademiaFenix.API.csproj", "{E9BB6278-A682-4BAB-BE90-8584E44D67A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcademiaFenix.API", "AcademiaFenix.API\AcademiaFenix.API.csproj", "{E9BB6278-A682-4BAB-BE90-8584E44D67A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademiaFenix.Application", "AcademiaFenix.Application\AcademiaFenix.Application.csproj", "{CDFF018D-A2B1-4AE7-AA17-565415D13E72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcademiaFenix.Application", "AcademiaFenix.Application\AcademiaFenix.Application.csproj", "{CDFF018D-A2B1-4AE7-AA17-565415D13E72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademiaFenix.Domain", "AcademiaFenix.Domain\AcademiaFenix.Domain.csproj", "{4BD88E53-0B39-4BDA-85E6-86C3257BA6A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcademiaFenix.Domain", "AcademiaFenix.Domain\AcademiaFenix.Domain.csproj", "{4BD88E53-0B39-4BDA-85E6-86C3257BA6A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademiaFenix.Infrastructure", "AcademiaFenix.Infrastructure\AcademiaFenix.Infrastructure.csproj", "{82EF9109-9A76-44BA-B901-379A6F11D391}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcademiaFenix.Infrastructure", "AcademiaFenix.Infrastructure\AcademiaFenix.Infrastructure.csproj", "{82EF9109-9A76-44BA-B901-379A6F11D391}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademiaFenix.Persistence", "AcademiaFenix.Persistence\AcademiaFenix.Persistence.csproj", "{3FA082D1-DA9E-4259-A709-A505C6979809}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcademiaFenix.Persistence", "AcademiaFenix.Persistence\AcademiaFenix.Persistence.csproj", "{3FA082D1-DA9E-4259-A709-A505C6979809}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademiaFenix.Test", "AcademiaFenix.Test\AcademiaFenix.Test.csproj", "{026AFB57-3A83-4B72-92BB-0B4E5A388ABD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{3FA082D1-DA9E-4259-A709-A505C6979809}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FA082D1-DA9E-4259-A709-A505C6979809}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FA082D1-DA9E-4259-A709-A505C6979809}.Release|Any CPU.Build.0 = Release|Any CPU
+		{026AFB57-3A83-4B72-92BB-0B4E5A388ABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{026AFB57-3A83-4B72-92BB-0B4E5A388ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{026AFB57-3A83-4B72-92BB-0B4E5A388ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{026AFB57-3A83-4B72-92BB-0B4E5A388ABD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
